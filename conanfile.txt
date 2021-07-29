@@ -1,0 +1,9 @@
+[requires]
+boost/1.76.0
+spdlog/1.4.2
+Catch2/2.11.1@catchorg/stable
+
+[generators]
+cmake
+cmake_find_package
+cmake_paths
