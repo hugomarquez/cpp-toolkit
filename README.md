@@ -1,5 +1,5 @@
 # About
-This is my personal toolkit/toolset of C++ software development environment. It is a WIP, but the idea is to just link to the required lib for fast prototyping and having a structured skeleton project integrated with cmake and a testing framework like Catch2.
+This is my personal toolkit/toolset of C++ software development environment. It is a WIP, but the idea is to just link to the required lib for fast prototyping. Having a structured skeleton project integrated with cmake, conan, catch2, spdlog and sdl.
 
 ## Conan notes
 If you are using GCC compiler >= 5.1, Conan will set the compiler.libcxx to the old ABI for backwards compatibility. You can change this with the following commands:
