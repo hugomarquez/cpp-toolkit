@@ -25,15 +25,16 @@ namespace hm {
 
   //! Linearly interpolates between a and b by f.
   inline float lerp(float a, float b, float f)
-	{
-		return a + f * (b - a);
-	}
+  {
+    return a + f * (b - a);
+  }
 
-  inline float plerp(float a, float b, float f) {
+  inline float plerp(float a, float b, float f)
+  {
     return (1 - f) * a + f * b;
   }
 
-  template <typename T> 
+  template <typename T>
   inline T degrees(T radians)
   {
     return radians * static_cast<T>(180.0 / M_PI);
@@ -46,30 +47,30 @@ namespace hm {
   }
 
   template <typename T>
-	inline T max(const T& a, const T& b)
-	{
-		return (a < b ? b : a);
-	}
+  inline T max(const T &a, const T &b)
+  {
+    return (a < b ? b : a);
+  }
 
   template <typename T>
-	inline T min(const T& a, const T& b)
-	{
-		return (a < b ? a : b);
-	}
-  
-  template<typename T>
+  inline T min(const T &a, const T &b)
+  {
+    return (a < b ? a : b);
+  }
+
+  template <typename T>
   inline T abs(T value)
-	{
-    if(std::is_integral<T>::value)
+  {
+    if (std::is_integral<T>::value)
       return std::abs(value);
-    if(std::is_floating_point<T>::value)
-		  return std::fabs(value);
+    if (std::is_floating_point<T>::value)
+      return std::fabs(value);
     return std::labs(value);
-	}
+  }
 
   template <typename T>
-	inline T clamp(const T& value, const T& lower, const T& upper)
-	{
-		return min(upper, max(lower, value));
-	}
+  inline T clamp(const T &value, const T &lower, const T &upper)
+  {
+    return min(upper, max(lower, value));
+  }
 }
