@@ -11,3 +11,4 @@
 
 // hm-math library
 #include "./hm/math/RandomTest.h"
+#include "./hm/math/utilsTest.h"
