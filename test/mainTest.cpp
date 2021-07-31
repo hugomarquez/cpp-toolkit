@@ -2,7 +2,12 @@
 #define CATCH_CONFIG_MAIN
 #include <catch2/catch.hpp>
 
-// Include the layers to test
+// hm-utils library
+#include "./hm/utils/ColorTest.h"
+
+// hm-system library
 #include "./hm/system/FileTest.h"
 #include "./hm/system/PlatformTest.h"
-#include "./hm/utils/ColorTest.h"
+
+// hm-math library
+#include "./hm/math/RandomTest.h"

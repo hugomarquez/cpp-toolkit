@@ -1,4 +1,5 @@
 add_subdirectory(utils)
+add_subdirectory(math)
 add_subdirectory(system)
 add_subdirectory(sdl)
 

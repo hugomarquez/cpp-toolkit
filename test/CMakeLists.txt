@@ -13,6 +13,9 @@ target_link_libraries(mainTest hm-system)
 # Link with hm-utils library
 target_link_libraries(mainTest hm-utils)
 
+# Link with hm-math library
+target_link_libraries(mainTest hm-math)
+
 # Link with Catch2 testing framework
 if(Catch2_FOUND)
   message("-- [TEST]: Required library Catch2 found!")
