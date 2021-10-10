@@ -1,4 +1,6 @@
-add_library(hm-math SHARED Random.cpp)
+add_library(hm-math SHARED 
+  Random.cpp
+)
 
 target_include_directories(hm-math 
   PUBLIC include
@@ -6,5 +8,5 @@ target_include_directories(hm-math
 )
 
 target_link_libraries(hm-math 
-  PUBLIC hm-utils
+  PUBLIC hm-utils hm-system
 )

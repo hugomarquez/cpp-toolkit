@@ -1,7 +1,6 @@
 #include <string>
 #include <type_traits>
 #include <stdint.h>
-#include <iostream>
 
 #include <catch2/catch.hpp>
 #include <hm/math/Random.h>

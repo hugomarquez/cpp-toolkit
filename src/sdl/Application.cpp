@@ -31,6 +31,7 @@ namespace hm {
     running = true;
     
     // File
+    /*
     std::string f = "assets/spritelib/platform/char10.png";
     // Textures
     Texture *dino = new Texture("dino", f, renderer);
@@ -38,7 +39,7 @@ namespace hm {
     if (dino->load() == false) {
       return false;
     }
-
+    */
     return true;
   }
 
@@ -71,13 +72,13 @@ namespace hm {
     // clear the renderer to the draw color
     renderer.clear();
 
-    Texture * t = AssetManager::getInstance()->getTexture("dino");
+    /*Texture * t = AssetManager::getInstance()->getTexture("dino");
     
     Rectangle src(0, 72, 130, 72);
     Rectangle dest(0, 0, 130, 72);
 
     t->draw(src, dest);
-    t->drawFrame(src, dest, 1, int(((SDL_GetTicks() / 100) % 4)));
+    t->drawFrame(src, dest, 1, int(((SDL_GetTicks() / 100) % 4)));*/
     // draw to the screen
     renderer.present();
   }

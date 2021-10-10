@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
 {
   // TODO: abstract this to sdl/application
   hm::Logger::setLevel(1);
-  hm::File::base_path = "add-path";
+  //hm::File::base_path = "add-path";
   hm::Timer::fps = 60;
   hm::Timer::delay = 1000.0f / hm::Timer::fps;
 

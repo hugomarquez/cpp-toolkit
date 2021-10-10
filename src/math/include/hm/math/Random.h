@@ -22,9 +22,9 @@ namespace hm {
       template<typename T>
       operator T()
       {
-        static unsigned int seed = 0x9D09742;
-        unsigned int res;
-        unsigned int tmp;
+        static u32 seed = 0x9D09742;
+        u32 res;
+        u32 tmp;
         
         seed *= 16807;
         tmp = seed ^ (seed >> 4) ^ (seed << 15);
