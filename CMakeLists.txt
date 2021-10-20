@@ -14,15 +14,19 @@ project(toolkit VERSION ${project_version} DESCRIPTION "Personal Toolkit" LANGUA
 # Set custom cmake modules path
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 
+# Set output paths
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/bin)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/lib)
+
 # Use c++11
 add_definitions("-std=c++11")
 
 # Conan setup
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 include(${CMAKE_BINARY_DIR}/conan_paths.cmake)
-conan_basic_setup()
 
 # Add sources
 add_subdirectory(src)
+
 # Add tests
 add_subdirectory(test)
